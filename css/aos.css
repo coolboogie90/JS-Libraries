@@ -1,0 +1,19 @@
+.section {
+    height: 100vh;
+}
+
+.section:nth-child(1) {
+    background-color: #FF8080;
+}
+
+.section:nth-child(2) {
+    background-color: #FFCF96;
+}
+
+.section:nth-child(3) {
+    background-color: #F6FDC3;
+}
+
+.section:nth-child(4) {
+    background-color: #FFCF96;
+}
