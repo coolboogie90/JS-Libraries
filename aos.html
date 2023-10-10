@@ -7,25 +7,47 @@
     <title>AOS</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./css/aos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
-    <section class="section" data-aos="fade-up">
-        <h2>I don’t suffer from insanity—I enjoy every minute of it.</h2>
-    </section>
+    <div class="global-container">
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="aos.html">AOS</a></li>
+                    <li><a href="swiper.html">Swiper</a></li>
+                    <li><a href="fslightbox.html">FS Lightbox</a></li>
+                    <li><a href="waypoints.html">Waypoints</a></li>
+                </ul>
+            </nav>
+            <a href="index.html">
+                <i class='bx bx-home bx-lg'></i>
+            </a>
+        </aside>
 
-    <section class="section" data-aos="fade-left">
-        <h2>The last thing I want to do is hurt you; but it’s still on the list.</h2>
-    </section>
+        <div class="container">
+            <section class="section">
+                <h2 data-aos="fade-up">I don’t suffer from insanity—I enjoy every minute of it.</h2>
+            </section>
 
-    <section class="section" data-aos="fade-right">
-        <h2>People who take care of chickens are literally chicken tenders.</h2>
-    </section>
+            <section class="section">
+                <h2 data-aos="fade-left">The last thing I want to do is hurt you; but it’s still on the list.</h2>
+            </section>
 
-    <section class="section" data-aos="zoom-in">
-        <h2>I failed math so many times at school, I can’t even count</h2>
-    </section>
+            <section class="section">
+                <h2 data-aos="fade-right">People who take care of chickens are literally chicken tenders.</h2>
+            </section>
+
+            <section class="section">
+                <h2 data-aos="zoom-in">I failed math so many times at school, I can’t even count</h2>
+            </section>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AOS</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./css/aos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    </head>
+
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/image1.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image2.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image3.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image4.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image5.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image6.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image7.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image8.jpg"></div>
+                <div class="swiper-slide"><img src="./images/image9.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><img src="./images/prev.png"></div>
+            <div class="swiper-button-next"><img src="./images/next.png"></div>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3.5,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>

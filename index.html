@@ -10,30 +10,61 @@
 </head>
 
 <body>
-    <label class="hamburger-menu">
-        <input type="checkbox">
-    </label>
-    <aside class="sidebar">
-        <nav>
-            <ul>
-                <li><a href="aos.html">AOS</a></li>
-                <li><a href="swiper.html">Swiper</a></li>
-                <li><a href="fslightbox.html">FS Lightbox</a></li>
-                <li><a href="waypoints.html">Waypoints</a></li>
-            </ul>
-        </nav>
-        <a href="index.html">
-            <i class='bx bx-home bx-lg'></i>
-        </a>
-    </aside>
+    <div class="global-container">
 
-    <section class="btn-container">
-        <!-- AOS  -->
-        <button id="btn-aos" class="btn">AOS</button>
-        <button id="btn-swiper" class="btn">Swiper</button>
-        <button id="btn-fslightbox" class="btn">FS Lightbox</button>
-        <button id="btn-waypoints" class="btn">Waypoints</button>
-    </section>
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="aos.html">AOS</a></li>
+                    <li><a href="swiper.html">Swiper</a></li>
+                    <li><a href="fslightbox.html">FS Lightbox</a></li>
+                    <li><a href="waypoints.html">Waypoints</a></li>
+                </ul>
+            </nav>
+            <a href="index.html">
+                <i class='bx bx-home bx-lg'></i>
+            </a>
+        </aside>
+
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+            coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+            <swiper-slide>
+                <div class="colored-block one">
+                    <div class="slide-content">
+                        <a href="aos.html" class="slide-title">AOS</a>
+                    </div>
+                </div>
+
+            </swiper-slide>
+            <swiper-slide>
+                <div class="colored-block two">
+                    <div class="slide-content">
+                        <a href="swiper.html" class="slide-title">Swiper</a>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="colored-block three">
+                    <div class="slide-content">
+                        <a href="fslightbox.html" class="slide-title">FS Lightbox</a>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="colored-block four">
+                    <div class="slide-content">
+                        <a href="waypoints.html" class="slide-title">Waypoints</a>
+                    </div>
+                </div>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 
 </body>
 

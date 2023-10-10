@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS Lightbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/fslightbox.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <a data-fslightbox="gallery" href="./images/image1.jpg">
+            <img src="./images/image1.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/image2.jpg">
+            <img src="./images/image2.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/image3.jpg">
+            <img src="./images/image3.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/image4.jpg">
+            <img src="./images/image4.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/image5.jpg">
+            <img src="./images/image5.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/image6.jpg">
+            <img src="./images/image6.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/image7.jpg">
+            <img src="./images/image7.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/image8.jpg">
+            <img src="./images/image8.jpg" alt="">
+        </a>
+        <a data-fslightbox="gallery" href="./images/9.jpg">
+            <img src="./images/image9.jpg" alt="">
+        </a>
+    </div>
+
+    <script src="fslightbox.min.js"></script>
+    <script>
+        fsLightboxInstances["first-lightbox"].props.onOpen = function () {
+            console.log("The first lightbox has opened.");
+        }
+        fsLightboxInstances["second-lightbox"].props.onOpen = function () {
+            console.log("The second lightbox has opened.");
+        }
+    </script>
+</body>
+</html>
