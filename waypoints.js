@@ -1,24 +1,21 @@
-const one = document.querySelector(".section200vh");
-const two = document.querySelector(".section100vh");
+const sectionTop = document.querySelector(".section200vh");
+const sectionDown = document.querySelector(".section100vh");
 
-const firstWP = new Waypoint({
-    element: one,
+const waypoint1 = new Waypoint({
+    element: sectionTop,
     handler: function (direction) {
         if (direction == "down") {
-            alert(
-                `Are you sure ? 
-Things are wild down there`
-            );
+            alert(`Are you sure ? Things are wild down there`);
         }
     },
-    offset: "-95%",
+    offset: 'bottom-in-view',
 });
 
-const secondWP = new Waypoint({
-    element: two,
+const waypoint2 = new Waypoint({
+    element: sectionDown,
     handler: function (direction) {
         if (direction == "up") {
-            alert("I told you ! ");
+            alert("I told you! ");
         }
     },
 });
