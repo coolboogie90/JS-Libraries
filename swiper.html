@@ -7,7 +7,7 @@
     <title>Swiper</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./css/swiper.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -24,24 +24,25 @@
     </head>
 
     <body>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./images/image1.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image2.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image3.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image4.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image5.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image6.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image7.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image8.jpg"></div>
-                <div class="swiper-slide"><img src="./images/image9.jpg"></div>
+        <section class="swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/image1.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image2.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image3.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image4.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image5.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image6.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image7.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image8.jpg"></div>
+                    <div class="swiper-slide"><img src="./images/image9.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"><img src="./images/prev.png"></div>
+                <div class="swiper-button-next"><img src="./images/next.png"></div>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"><img src="./images/prev.png"></div>
-            <div class="swiper-button-next"><img src="./images/next.png"></div>
-        </div>
-
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper-container', {
                 slidesPerView: 3.5,
