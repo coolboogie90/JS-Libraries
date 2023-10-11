@@ -10,18 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AOS</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="./css/aos.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    </head>
 
     <body>
         <section class="swiper">
@@ -42,13 +30,15 @@
                 <div class="swiper-button-next"><img src="./images/next.png"></div>
             </div>
         </section>
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper-container', {
                 slidesPerView: 3.5,
-                spaceBetween: 10,
+               
                 pagination: {
                     el: '.swiper-pagination',
+                    type:'fraction',
                     clickable: true,
                 },
                 navigation: {
